@@ -1,0 +1,27 @@
+/* pages/me/index.wxss */
+@import '../../app.wxss';
+.my-img{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+}
+.my-btn{
+  width: 300rpx;
+  font-size: 30rpx;
+  margin: 0;
+  padding-left: 20rpx;
+}
+.popup-box{
+  width: 500rpx;
+  height: 400rpx;
+}
+.popup-img{
+  width: 500rpx;
+  height: 300rpx;
+}
+.my-top{
+  padding: 10rpx 10rpx;
+}
+.my-top view:nth-of-type(1){
+  padding-left: 50rpx;
+}

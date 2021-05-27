@@ -1,0 +1,5 @@
+<!--pages/newMusicList/index.wxml-->
+<view class='new-item app-flex-center' wx:for="{{musicList}}" wx:key='index' data-id='{{item.id}}' bindtap="goNDetail">
+  <image class='new-img' src='{{item.picUrl}}'></image>
+  <view class='app-text-noe'>{{item.name}}</view>
+</view>

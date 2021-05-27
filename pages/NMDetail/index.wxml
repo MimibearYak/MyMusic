@@ -1,0 +1,30 @@
+<!--pages/NMDetail/index.wxml-->
+<view class='detail-box'>
+  <view class='detail-top' >
+    {{name}}
+  </view>
+  <image class="detail-play-Pointer {{play?'detail-pointer-play':''}}" src='../../img/musicPlay/player_bar.png'></image>
+  <view class='detail-play-disc'>
+    <image class='detail-disc-img {{play? "discActive":""}}' src='../../img/musicPlay/disc.png'></image>
+    <image class='detail-disc-urlImg {{play? "discActive":""}}' src='{{coverImg}}'></image>
+  </view>
+  <view class='detail-time app-flex-betncenter'>
+    <text>{{CurrentTime}}</text>
+    <view class='detail-time-Total'>
+      <view class='detail-time-progress' style='width:{{currentProgress}}rpx'>
+        <view class='detail-progress-circular'></view>
+      </view>
+    </view>
+    <text>{{MusicTime}}</text>
+  </view>
+  <view class='detail-time-play app-flex-three'>
+    <text class='iconfont icon-fenxiang'>
+    </text>
+    <text class='iconfont icon-bofang' bindtap="playMusic" wx:if="{{!play}}">
+    </text>
+    <text class='iconfont icon-zantingtingzhi' wx:else bindtap="playMusic">
+    </text>
+    <text class='iconfont icon-xiaoxi'>
+    </text>
+  </view> 
+</view> 

@@ -1,0 +1,54 @@
+<view class='index'>
+  <!-- 轮播图 -->
+  <swiper autoplay="autoplay" interval="2000" indicator-dots="true" indicator-color="rgba(255,20,147,.3)" indicator-active-color="rgba(255,127,36,.8)"> 
+    <swiper-item wx:for="{{banner}}" wx:key="index">
+      <image class='imageBanner' src="{{item.imageUrl}}"></image>
+    </swiper-item>
+  </swiper>
+  <view class='classList appFlex-one'>
+    <view class=' ListItem'>
+      <text class='iconfont icon-songlist-01'></text>
+      <view>歌单</view>
+    </view>
+
+    <view class=' ListItem' bindtap="gonewmusiclist">
+      <text class='iconfont icon-zuixin'></text>
+      <view>最新音乐</view>
+    </view>
+
+    <view class=' ListItem' x>
+      <text class='iconfont icon-zhubo'></text>
+      <view>主播</view>
+    </view>
+
+    <view class=' ListItem'>
+      <text class='iconfont icon-paihangbang'></text>
+      <view>排行榜</view>
+    </view>
+
+    <view class=' ListItem'>
+      <text class='iconfont icon-geshou' style="margin-right:10px"></text>
+      <view>歌手</view>
+    </view>
+  </view>
+  <!-- 歌单 -->
+  <view>
+    <view class='appFlex-two reTitle'>
+      <text>推荐歌单</text>
+      <text>更多></text>
+    </view>
+    <scroll-view class='scroll-R' enable-flex scroll-x='true' style="width:750rpx">
+      <view class='reItem' wx:for="{{recommentList}}" wx:key="index">
+        <image class='reImg' src="{{item.coverImgUrl}}"></image>
+        <view class='app-text-noe'>{{item.name}}</view>
+      </view>
+    </scroll-view>
+  </view>
+  <view class='appFlex-two reTitle'>
+    <text>独家放送</text>
+    <text>更多></text>
+  </view>
+  <scroll-view class='appFlex-start scroll-R'  enable-flex scroll-x='true' style="width:750rpx">
+    <Sole class='sole-item' getSoleSong="{{item}}" wx:for="{{soleData}}" wx:key='index'></Sole>
+  </scroll-view>
+</view> 

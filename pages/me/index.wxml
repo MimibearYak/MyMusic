@@ -1,0 +1,22 @@
+<!--pages/me/index.wxml-->
+<view class='my-box'>
+  <view class='my-top appFlex' wx:if="{{!userInfo}}">
+    <image class='my-img' src='../../img/tabarImage/ren.png'></image>
+    <button class='my-btn'>请求登录</button>
+  </view>
+  <view class='my-top app-flex-center' wx:else>
+    <image class='my-img' src='{{userInfo.avatarUrl}}'></image>
+    <view>欢迎你:{{userInfo.nickName}}</view>
+  </view>
+
+  <view class='item'>
+
+  </view>
+
+  <van-popup show="{{ show }}" bind:close="onClose" round>
+    <view class='popup-box'>
+      <image class='popup-img' src='../../img/tabarImage/MV.png'></image>
+      <button open-type="getUserInfo" bindgetuserinfo='getUserInfo'>登录</button>
+    </view>
+  </van-popup>
+</view>

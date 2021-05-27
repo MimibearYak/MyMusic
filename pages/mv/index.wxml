@@ -1,0 +1,14 @@
+<view class='mv-box'>
+  <view class='app-flex-three M-Header'>
+    <view class='{{activeIndex==index?"activeStyle":""}}' wx:for="{{classTtitle}}" wx:key="index" data-index="{{index}}" data-class="{{item}}" catchtap="selectClass">{{item}}</view>
+  </view>
+  <view class='mv-list'>
+    <view wx:for="{{mvList}}" wx:key='index' data-id="{{item.id}}" bindtap="goplay">
+      <image class='mv-img' src='{{item.cover}}'></image>
+      <view>
+        <text>{{item.name}}</text>
+        <text>....</text>
+      </view>
+    </view>  
+  </view>
+</view>

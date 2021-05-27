@@ -1,0 +1,56 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/mv/index",
+    "pages/me/index",
+    "pages/newMusicList/index",
+    "pages/NMDetail/index"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#FF4500",
+    "navigationBarTitleText": "我的音乐",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/img/tabarImage/index.png",
+        "selectedIconPath": "/img/tabarImage/indexActive.png"
+      },
+      {
+        "pagePath": "pages/mv/index",
+        "text": "MV",
+        "iconPath": "/img/tabarImage/MV.png",
+        "selectedIconPath": "/img/tabarImage/MVActive.png"
+      },
+      {
+        "pagePath": "pages/me/index",
+        "text": "我的",
+        "iconPath": "/img/tabarImage/ren.png",
+        "selectedIconPath": "/img/tabarImage/renActive.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "requiredBackgroundModes": ["audio", "location"],
+  "subpackages": [
+    {
+      "root": "packgeA",
+      "pages": [
+        "pages/mvDetail/index"
+
+      ]
+    }
+  ],
+  "preloadRule": {
+    "pages/mv/index": {
+      "network": "all",
+      "packages": ["packgeA"]
+    }
+  }
+
+}

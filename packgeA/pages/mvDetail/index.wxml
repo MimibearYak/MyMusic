@@ -1,0 +1,19 @@
+<!--pages/mvDetail/index.wxml-->
+<view class="mv-box">
+  <video class='videoClass' src='{{MVurl}}' enable-play-gesture='true' enable-danmu='true' danmu-btn='true' danmu-list autoplay></video>
+  <view class='mvRecomment'>
+    <view class='ReTitle'>
+      <text>||</text>
+      <text>滑动更多~~</text>
+    </view>
+    <scroll-view class='recommentList' scroll-x='true' enable-flex='true'>
+      <view class='listItem' wx:for="{{mvRecomment}}" wx:key='index' data-id='{{item.id}}' bindtap="goplayMV">
+        <image class='revideo' src='{{item.cover}}'></image>
+        <view class='app-text-noe'>{{item.name}}</view>
+        <view class='itemTime'>{{item.time}}</view>
+      </view>
+    </scroll-view>
+  </view>
+  <button open-type='share'>分享到微信群</button>
+  <button open-type='share'>分享给朋友</button>
+</view>

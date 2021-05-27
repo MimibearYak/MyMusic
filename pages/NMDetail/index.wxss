@@ -1,0 +1,94 @@
+/* pages/NMDetail/index.wxss */
+/* @import '../../app.wxss'; */
+page{
+  height: 100%;
+  background-color: rgba(255, 130, 71, .2);
+}
+.detail-top{
+  text-align: center;
+  color: rgba(250, 128, 114, .95);
+  font-weight: normal;
+  padding-top: 20rpx;
+} 
+.detail-play-Pointer{
+  z-index: 1000;
+  position: relative;
+  left: 46%;
+  top: 50rpx;
+  width: 300rpx;
+  height: 200rpx;
+  transform: rotate(0deg);
+  transition: transform 1s;
+  transform-origin: 0 0;
+}
+.detail-pointer-play{
+  transform: rotate(20deg);
+  transition: transform .7s;
+  transform-origin: 0 0;
+}
+.detail-play-disc{
+  position: relative;
+  left: 50%;
+  top: 230rpx;
+  transform: translate(-50%,-50%);
+  width: 500rpx;
+  height: 500rpx;
+  
+}
+.detail-disc-img{
+  width: 500rpx;
+  height: 500rpx;
+}
+.detail-disc-urlImg{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 281rpx;
+  height: 281rpx;
+  border-radius: 50%;
+}
+.discActive{
+  animation: disc 6s linear infinite;
+  animation-delay: .5s;
+}
+@keyframes disc{
+  form{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
+.detail-time-Total{
+  position: relative;
+  height: 4rpx;
+  width: 550rpx;
+  background-color: rgba(135, 206, 250, .8);
+}
+.detail-time-progress{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 4rpx;
+  
+  background-color: rgba(255, 106, 106, .7);
+}
+.detail-time-play{
+  border-top: 2px solid rgba(255, 255, 255, .7);
+  height: 200rpx; 
+  color: rgba(208, 32, 144, .95);
+  margin-top: 40rpx;
+}
+
+.detail-progress-circular{
+  position: absolute;
+  top: -3rpx;
+  right: 0;
+  width: 10rpx;
+  height: 10rpx;
+  background-color: rgb(160, 43, 226);
+  border-radius: 50%;
+}

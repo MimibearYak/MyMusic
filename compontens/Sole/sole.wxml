@@ -1,0 +1,5 @@
+<!--compontens/Sole/sole.wxml-->
+<view class='sole-box'>
+  <image class='sole-img' src='{{getSoleSong.picUrl}}'></image>
+  <view class='app-text-noe'>{{getSoleSong.name}}</view>
+</view>

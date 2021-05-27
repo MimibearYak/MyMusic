@@ -1,0 +1,36 @@
+@import '/iconFont/iconfont.wxss';
+.appFlex{
+  display: flex;
+
+}
+.appFlex-one{
+  display: flex;
+  justify-content: space-around;
+}
+.appFlex-start{
+  display: flex;
+  justify-content: space-between;
+}
+.appFlex-two{
+  display: flex;
+  justify-content: space-between;
+}
+.app-text-noe{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+} 
+.app-flex-three{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.app-flex-center{
+  display: flex;
+  align-items: center;
+}
+.app-flex-betncenter{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

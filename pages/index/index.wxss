@@ -1,0 +1,46 @@
+@import '../../iconFont//iconfont.wxss';
+.index{
+  overflow-y: auto;
+}
+.imageBanner{
+  height: 100%;
+  width: 750rpx;
+}
+.classList{
+  padding: 20rpx 0;
+}
+.ListItem:hover{
+  background-color: rgba(0,0,0,.1);
+}
+.classList text{
+  color: red;
+  font-size: 70rpx;
+}
+.classList view{
+  text-align: center;
+}
+.reTitle{
+  padding: 0 20rpx;
+  padding-bottom: 16rpx;
+  padding-top: 10rpx;
+  border-bottom: 3rpx solid rgba(238,130,238,.8);
+  margin-bottom: 20rpx;
+}
+.scroll-R{
+  padding-bottom: 10rpx;
+  height:260rpx;
+  white-space: nowrap;
+}
+.sole-item{
+  padding: 0 20rpx;
+}
+.reItem{
+  display: inline-block;
+  width: 180rpx;
+  margin: 0 18rpx;
+}
+.reImg{
+  height: 180rpx;  
+  width: 180rpx;
+  border-radius: 10rpx;
+}

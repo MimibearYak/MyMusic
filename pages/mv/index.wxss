@@ -1,0 +1,21 @@
+/* pages/mv/index.wxss */
+.mv-box{
+  padding: 10rpx 10rpx;
+}
+.M-Header{
+  background-color: rgba(0,0,0,.1);
+  height: 100rpx;
+  border-radius: 16rpx;
+}
+.activeStyle{
+  color: #BA55D3;
+  padding-bottom: 8rpx;
+  border-bottom: 4rpx solid rgba(255, 114, 86, .6);
+}
+.mv-img{
+  width: 100%;
+  height: 300rpx;
+  border-radius: 30rpx;
+  padding-bottom: 10rpx;
+  padding-top: 14rpx;
+}
